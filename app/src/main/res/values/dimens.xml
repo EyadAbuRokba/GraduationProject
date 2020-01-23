@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_view_dimens">300dp</dimen>
+    <dimen name="card_view_textsize">18sp</dimen>
+    <dimen name="text_size_subline">15sp</dimen>
+    <dimen name="text_view_size">16sp</dimen>
+    <dimen name="width_edittext">200dp</dimen>
+    <dimen name="text_size_categories">17sp</dimen>
+    <dimen name="height_edittext">35dp</dimen>
+    <dimen name="margin_top">8dp</dimen>
+    <dimen name="textview_numbers">17sp</dimen>
+    <dimen name="text_size_main_screen">18sp</dimen>
+    <dimen name="text_size_splash">16sp</dimen>
+    <dimen name="card_view_height">45dp</dimen>
+    <dimen name="ship_size_image">75dp</dimen>
+    <dimen name="height_size_image">75dp</dimen>
+    <dimen name="margin_start_textview">26dp</dimen>
+    <dimen name="margin_top_buttom">70dp</dimen>
+    <dimen name="height_grid_layout">780dp</dimen>
+    <dimen name="margin_bottom_textview">20dp</dimen>
+</resources>

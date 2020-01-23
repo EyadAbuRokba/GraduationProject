@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.osama.ministryofinteriorproject">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ministry"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.AddShipActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.ExitShipActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.AddFisherActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.ExitFisherActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.AddUserActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.Activities.ActivityOne"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.AddShipActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.FishersListActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+        <activity
+            android:name="com.example.eyad.ministryofinteriorproject.ShipsListActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+
+        <activity android:name="com.example.eyad.ministryofinteriorproject.FishersOnSeaActivity"
+            android:parentActivityName="com.example.eyad.ministryofinteriorproject.HomeScreenActivity" />
+    </application>
+
+</manifest>

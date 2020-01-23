@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">منظمة شؤون الصيادين</string>
+    <string name="app_name_ar">الشرطة البحرية</string>
+    <string name="slogo">الخدمات الإلكترونية/جهاز الشرطة البحرية-غزة</string>
+    <string name="userName">إسم المستخدم</string>
+    <string name="userPass">كلمة السر</string>
+    <string name="LogIn">تسجيل الدخول</string>
+    <string name="insertNew">إضافة بيانات المركبة</string>
+    <string name="exit">إغلاق</string>
+    <string name="submit">موافق</string>
+    <string name="jar">جر</string>
+    <string name="lansh">شنشولة-لنش</string>
+    <string name="haska">شنشولة-حسكة</string>
+    <string name="mltash">ملطش</string>
+    <string name="snar">سنار</string>
+    <string name="bols">بولص</string>
+    <string name="zyda">زيدة</string>
+    <string name="hbary">حباري</string>
+    <string name="jlmbat">جلمبات</string>
+    <string name="mnfel">منوفيل</string>
+    <string name="slafeh">سلافيح</string>
+    <string name="jmbry">جمبري</string>
+    <string name="msada">مساعدة</string>
+    <string name="edaia">إضاءة</string>
+    <string name="syaha">سياحة</string>
+    <string name="tnseq">تنسيق</string>
+
+    <string name="circular_bold">font/Omar-Bold-1.ttf</string>
+
+
+    <string-array name="Governorate_array">
+        <item>شمال غزة</item>
+        <item>غزة</item>
+        <item>غرب غزة</item>
+        <item>جنوب غزة</item>
+    </string-array>
+
+    <string-array name="Rank_array">
+
+        <item>جندي</item>
+        <item>عريف</item>
+        <item>رقيب</item>
+        <item>رقيب اول</item>
+        <item>مساعد</item>
+        <item>مساعد اول</item>
+        <item>ملازم</item>
+        <item>ملازم اول</item>
+        <item>نقيب</item>
+        <item>رائد</item>
+        <item>مقدم</item>
+        <item>عقيد</item>
+        <item>عميد</item>
+        <item>لواء</item>
+
+    </string-array>
+
+    <string-array name="State_array">
+
+        <item>فعال</item>
+        <item>غير فعال</item>
+
+    </string-array>
+
+</resources>

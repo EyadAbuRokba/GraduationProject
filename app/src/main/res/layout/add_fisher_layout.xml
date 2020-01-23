@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="4dp"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="@dimen/card_view_textsize"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="بيانات مالك المركب"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="start"
+                        android:textSize="@dimen/text_size_subline"
+                        android:textColor="@color/colorAccent"
+                        android:text="اسم المالك :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/ownerName"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|center"
+                        android:textSize="13sp"
+                        android:text="حمدي عبد اللطيف ابراهيم الضابوس"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginEnd="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="start"
+                            android:textSize="@dimen/text_size_subline"
+                            android:textColor="@color/colorAccent"
+                            android:text="رقم الهوية :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/ownerId"
+                            android:textStyle="bold"
+                            android:layout_gravity="start|center"
+                            android:textSize="13sp"
+                            android:text="985194489"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginEnd="12dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="start"
+                            android:textSize="@dimen/text_size_subline"
+                            android:textColor="@color/colorAccent"
+                            android:text="محافظة المركب :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/governorate"
+                            android:textStyle="bold"
+                            android:layout_gravity="start|center"
+                            android:textSize="13sp"
+                            android:text="شمال غزة"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="@dimen/card_view_textsize"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="بيانات الصيادين"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size_subline"
+                        android:textColor="@color/colorAccent"
+                        android:text="اسماء الصيادين داخل المركب"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="اسامخ محمد اسماعيل الشنطي "
+                            android:textIsSelectable="false"
+                            android:id="@+id/fishersName"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textIsSelectable="false"
+                            android:id="@+id/fishersId"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edtFisherId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" رقم هوية الصياد"
+                android:inputType="number"
+                android:layoutDirection="rtl"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_errorColor="@android:color/holo_red_dark"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_underlineColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

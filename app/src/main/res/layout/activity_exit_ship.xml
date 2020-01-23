@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context="com.example.eyad.ministryofinteriorproject.ExitShipActivity">
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="@dimen/card_view_dimens"
+            android:layout_height="50dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="خروج مركبة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_view_textsize"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:layout_marginLeft="26dp"
+                    android:text="حكومي"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:text="-0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:layout_marginLeft="32dp"
+                    android:text="سياحي"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:text="-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:layout_marginLeft="48dp"
+                    android:text="لنش"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:text="-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:layout_marginLeft="26dp"
+                    android:text="نزهة ملاكي"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:text="-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:layout_marginLeft="57dp"
+                    android:text="حسكة"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:text="-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:layout_marginLeft="57dp"
+                    android:text="فلوكة"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/text_size_subline"
+                    android:text="-5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/colorAccent"
+                android:text="رقم المركبة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginStart="18dp"
+                android:background="@drawable/textinputborder"
+                android:layout_height="@dimen/height_edittext"
+                android:id="@+id/edtPlateNum"
+                android:layout_width="@dimen/width_edittext" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <info.hoang8f.widget.FButton
+            android:textSize="@dimen/text_size_subline"
+            android:id="@+id/btnOk"
+            android:text="تسجيل خروج"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            app:fButtonColor="@color/colorBackground"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"
+            />
+
+        <info.hoang8f.widget.FButton
+            android:textSize="@dimen/text_size_subline"
+            android:id="@+id/btnExit"
+            android:text="@string/exit"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            app:fButtonColor="@color/colorPrimaryDark"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_nav_menu"
+            android:background="#D3D3D3"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

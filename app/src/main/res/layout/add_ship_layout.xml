@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="4dp"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="start"
+                        android:textSize="@dimen/text_size_subline"
+                        android:textColor="@color/colorAccent"
+                        android:text="اسم المالك :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/ownerName"
+                        android:textStyle="bold"
+                        android:layout_gravity="start|center"
+                        android:textSize="@dimen/text_size_subline"
+                        android:text="حمدي عبد اللطيف ابراهيم الضابوس"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginEnd="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="start"
+                            android:textSize="@dimen/text_size_subline"
+                            android:textColor="@color/colorAccent"
+                            android:text="رقم الهوية :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/ownerId"
+                            android:textStyle="bold"
+                            android:layout_gravity="start|center"
+                            android:textSize="@dimen/text_size_subline"
+                            android:text="985194489"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginEnd="15dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="start"
+                            android:textSize="@dimen/text_size_subline"
+                            android:textColor="@color/colorAccent"
+                            android:text="المحافظة :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/governorate"
+                            android:textStyle="bold"
+                            android:layout_gravity="start|center"
+                            android:textSize="@dimen/text_size_subline"
+                            android:text="شمال غزة"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edtIdOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" رقم هوية الصياد الاول"
+                android:inputType="number"
+                android:layoutDirection="rtl"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_errorColor="@android:color/holo_red_dark"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorPrimaryDark"
+
+                app:met_underlineColor="@color/colorPrimaryDark" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtIdTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" رقم هوية الصياد الثاني"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_errorColor="@android:color/holo_red_dark"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_underlineColor="@color/colorPrimaryDark" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtIdThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" رقم هوية الصياد الثالت"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_errorColor="@android:color/holo_red_dark"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorPrimaryDark" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtIdFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" رقم هوية الصياد الرابع"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_errorColor="@android:color/holo_red_dark"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorPrimaryDark" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtIdFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" رقم هوية الصياد الخامس"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_errorColor="@android:color/holo_red_dark"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnInsert"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="إضافة"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="إلغاء"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.v7.widget.CardView>

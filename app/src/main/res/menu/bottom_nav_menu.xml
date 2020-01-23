@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_Fishers"
+        android:enabled="true"
+        android:icon="@drawable/ic_people_white_24dp"
+        android:title="الصيادين"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_ships"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_boat_white_24dp"
+        android:title="مراكب داخل البحر"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_FisherOnSea"
+        android:enabled="true"
+        android:icon="@drawable/ic_perm_contact_calendar_white_24dp"
+        android:title="صياد داخل البحر"
+        app:showAsAction="always" />
+</menu>

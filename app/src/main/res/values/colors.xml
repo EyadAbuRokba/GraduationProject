@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#0554d4</color>
+
+
+    <color name="colorPrimary">#ff0099cc</color>
+    <color name="colorPrimaryDark">#015686</color>
+    <color name="colorAccent">#C6640C</color>
+
+
+    <color name="colorBacgroundTV">#aab5aeec</color>
+    <color name="backgroundSummary">#85e1dbdd</color>
+
+</resources>

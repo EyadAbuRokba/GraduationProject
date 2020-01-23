@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.eyad.ministryofinteriorproject.HomeScreenActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/card_view_dimens"
+                    android:layout_height="@dimen/card_view_height"
+                    android:layout_weight="7"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="الشفت : "
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/card_view_textsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/card_view_textsize"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/add"
+                        android:textStyle="bold"
+                        android:text="إضافة شفت"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_size_subline"
+                        app:cornerRadius="8dp"
+                        app:fButtonColor="@color/colorAccent"
+                        app:shadowColor="@android:color/black"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="3dp"
+                        android:layout_width="100dp" />
+
+
+                    <info.hoang8f.widget.FButton
+                        android:textSize="@dimen/text_size_subline"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/exit"
+                        android:textStyle="bold"
+                        android:text="نهاية الشفت"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textColor="#fff"
+                        app:cornerRadius="8dp"
+                        app:fButtonColor="@color/colorAccent"
+                        app:shadowColor="@android:color/black"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="3dp"
+                        android:layout_width="100dp" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginBottom="15dp"
+                android:background="#555555"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:backgroundTint="#555555"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:text="إجمـالي عـدد الصيـادين"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size_subline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="#D3D3D3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/TvCountFisher"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textview_numbers"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:backgroundTint="#555555"
+                    android:layout_width="182dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:text="عـدد المـراكب داخـل البـحر"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size_subline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="#D3D3D3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/TvcountShips"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textview_numbers"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:backgroundTint="#555555"
+                    android:layout_width="182dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:text="عـدد الصيـادين داخـل البحر"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size_subline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="#D3D3D3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/TvcountFisherOnSea"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textview_numbers"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+            <GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="3">
+
+                <!-- Row 1 -->
+
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/jarItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="إضافة مركبة"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_size_main_screen"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_directions_boat_white_24dp"
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="خروج مركبة"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_size_main_screen"
+                                android:textStyle="bold" />
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_back_white_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_directions_boat_white_24dp"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- Row 2 -->
+
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="إلحاق صياد"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_size_main_screen"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_person_add_white_24dp"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="خروج صياد"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_size_main_screen"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_back_white_24dp"
+                                    />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_person_white_24dp"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- Row 3 -->
+            </GridLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

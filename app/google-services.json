@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "299317374124",
+    "firebase_url": "https://ministryofinteriorproject.firebaseio.com",
+    "project_id": "ministryofinteriorproject",
+    "storage_bucket": "ministryofinteriorproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299317374124:android:cb742f0ea98b8eae",
+        "android_client_info": {
+          "package_name": "com.example.osama.ministryofinteriorproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299317374124-gf4lstevb6t7cqs5e17osso0cv2ik7ae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.osama.ministryofinteriorproject",
+            "certificate_hash": "fe4fb61fe571d5570e57ae3773f8d40849b02bc1"
+          }
+        },
+        {
+          "client_id": "299317374124-uf7j0vgai0g5h0mpjempvvl4kajkv54e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1eEu3YQ2dIDULmzu4bMQY4lXSQBoQcyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299317374124-uf7j0vgai0g5h0mpjempvvl4kajkv54e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
